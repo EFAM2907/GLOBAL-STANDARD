@@ -12,7 +12,7 @@ export default function Products() {
 
     <div>
         <h2>{name}</h2>
-        <img src={img} alt='precio' width='150px' />
+        <img src={img} alt='precio' width='150px' height='100px' />
         <p>{price}</p>
     </div>
     )
