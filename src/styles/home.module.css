@@ -1,0 +1,44 @@
+.img{
+    opacity: 0.3;
+    width: 100%;
+    
+}
+.container{
+    background-color: rgb(0, 0, 0);
+    padding: 0;
+    
+}
+.alltext{
+ 
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 90px;
+
+}
+
+.text{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 10px;
+   
+
+}
+
+.texto1{
+   
+    border: 2px solid white;
+    letter-spacing: 5px;
+    color: rgba(255, 255, 255, 0.918);
+    font-weight: bold;
+    font-size: 4em;
+    padding:28px;
+    margin: 1em 4em;
+}
+
+.texto2{
+    color: white;
+    font-size:20px;
+    letter-spacing: 5px;
+
+}
