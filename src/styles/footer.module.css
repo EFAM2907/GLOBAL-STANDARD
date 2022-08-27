@@ -1,0 +1,79 @@
+.container{
+    margin: 0 auto;
+    background-color:rgba(0, 0, 0, 0.911);
+    margin-top: 50px;
+
+}
+
+.inbuild{
+    max-width: 250px;
+    text-align:left
+
+}
+.inbuild h3{
+ color: white;
+ font-size: 23px;
+ letter-spacing: 1px;
+}
+
+.inbuild p{
+    color: rgb(216, 203, 203);
+    font-size: 14px;
+
+   
+}
+
+.contenido{
+    padding: 26px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.link{
+    color: rgb(216, 203, 203);
+}
+
+.link li{
+    padding: 10px;
+    font-size: 13px
+
+}
+
+.link h3{
+    font-size: 13px
+}
+
+.iconos{
+    height: 40px;
+    margin: 5px;
+    background-color: #fff;
+    height:20px;
+    border-radius: 3px;
+  }
+
+  .names {
+    color: white;
+    text-decoration: none
+  }
+  :hover{
+    color:rgb(38, 69, 104)
+  }
+
+
+.contacts{
+    display: flex;
+    flex-direction: column
+}
+
+
+
+ .OurContacts{
+    font-size: 13px;
+    color: rgb(216, 203, 203);
+
+
+ }
+ 
+
+ 
