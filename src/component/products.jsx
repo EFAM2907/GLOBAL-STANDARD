@@ -10,9 +10,10 @@ export default function Products() {
  function Card({name, img, price}){
     return(
 
-    <div>
+    <div className={s.card}>
         <h2>{name}</h2>
-        <img src={img} alt='precio' width='150px' />
+        <br />
+        <img src={img} alt='precio' width='320px' height='200px' />
         <p>{price}</p>
     </div>
     )
@@ -20,6 +21,13 @@ export default function Products() {
 
   return (
     <div >
+    <div className={s.title}>
+
+     <h1>Branding Projects</h1>
+     <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+  
+    </div>
+
         <div className={s.container}>
 
         {
