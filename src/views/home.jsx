@@ -4,6 +4,7 @@ import Footer from '../component/footer'
 import Products from '../component/products'
 import Services from '../component/services'
 import imagen from '../img/BannerPrincipal.png'
+import Entertainment from '../component/services/entertainment'
 import s from '../styles/home.module.css'
 
 
@@ -11,6 +12,7 @@ export default function Home() {
   return (
  <div>
   <Nav />
+  <Entertainment />
    <div className={s.container}>
     <img className={s.img} src={imagen} alt='imagen-Principal'  />
      <div className={s.alltext}>
