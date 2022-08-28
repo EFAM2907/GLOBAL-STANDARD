@@ -1,0 +1,10 @@
+.container{
+    display:grid;
+    grid-template-columns: repeat(3, 2fr);
+    margin-left: 80px;
+}
+
+.produ{
+    text-align: left;
+    font-size: 25px
+}
