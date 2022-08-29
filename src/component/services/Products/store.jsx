@@ -1,5 +1,6 @@
 import React, {useEffect,useState} from 'react'
 import {useSelector} from 'react-redux'
+import {Link} from 'react-router-dom'
 import Fade from 'react-reveal/Fade';
 import CardProducts from './cardProducts'
 import Paginado from './paginado'
@@ -43,16 +44,22 @@ export default function StoreProducts() {
             (pagina - 1) * paisesPorPagina,
             (pagina - 1) * paisesPorPagina + paisesPorPagina)
             .map((p)=>(
-            <CardProducts 
-            images={p.images ? p.images:'https://d1fufvy4xao6k9.cloudfront.net/images/landings/421/wedding-shoe.jpg'}
-            title={p.title} 
-            price={p.price}
-            category={p.category.name} />
+              <div>
+             <div>
+                <CardProducts 
+                images={p.images ? p.images:'https://d1fufvy4xao6k9.cloudfront.net/images/landings/421/wedding-shoe.jpg'}
+                title={p.title} 
+                price={p.price}
+                category={p.category.name} />
+             </div>
+             
+             
+              </div>
           ))
+         
         }
       </div>
      </Fade>
     </div>
   )
 }
-

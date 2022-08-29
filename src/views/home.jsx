@@ -18,11 +18,11 @@ export default function Home() {
    <div className={s.container}>
     <img className={s.img} src={imagen} alt='imagen-Principal'  />
      <div className={s.alltext}>
-   {/* <Fade right> */}
+   <Fade right>
        <h1 className={s.text}>WELCOME TO INBUILD</h1>
         <h2 className={s.texto1} >GLOBAL STANDARD</h2>
          <h3 className={s.texto2} >BUILD ALL THE UNIQUE PATTERNS</h3>
-         {/* </Fade> */}
+         </Fade>
      </div>
  </div>
     <Services />
