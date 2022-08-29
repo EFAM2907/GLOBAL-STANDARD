@@ -4,7 +4,17 @@
     margin-left: 80px;
 }
 
-.produ{
-    text-align: left;
-    font-size: 25px
+
+
+.paginado{
+    display:flex;
+    justify-content:space-around;
+    margin-right:30px ;
+    padding:20px;
+
+}
+
+.paginado h3{
+    font-size: 23px;
+    color:rgb(32, 179, 184);
 }
