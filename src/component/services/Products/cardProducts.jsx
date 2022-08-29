@@ -8,7 +8,7 @@ export default function CardProducts({images, title,price,category}) {
      <div className={s.container}>
       <div  className={s.product}>
        <div>
-        <img src={images} alt ='imagen' width="200" height="150"  />
+        <img src={images } alt ='imagen' width="200" height="150"  />
          </div>
           <div>
            <h3>{title}</h3>
