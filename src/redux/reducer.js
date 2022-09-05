@@ -1,12 +1,14 @@
 import{ 
     GET_PRODUCTS,
-    GET_BY_NAME
+    GET_BY_NAME,
+    GET_CATEGORY
 } from './action'
 
 
 
 const initialState={
-  AllProducts:[]
+  AllProducts:[],
+  AllCategories:[]
 }
 
 
@@ -26,6 +28,13 @@ const rootReducer = (state = initialState, action)=>{
         }
      }
 
+     case GET_CATEGORY:{
+        console.log('TODAS LAS CATEGORY',action.payload)
+        return{
+         ...state,
+         AllCategories: action.payload
+        }
+     }
         default: {
            return state; }
     }
