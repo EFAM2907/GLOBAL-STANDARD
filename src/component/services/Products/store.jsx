@@ -50,13 +50,15 @@ export default function StoreProducts() {
                 images={p.images ? p.images:'https://d1fufvy4xao6k9.cloudfront.net/images/landings/421/wedding-shoe.jpg'}
                 title={p.title} 
                 price={p.price}
-                category={p.category.name} />
+                category={p.category.name} 
+                id={p.id} />
+                
              </div>
-             
-             
               </div>
+             
           ))
-         
+          
+        
         }
       </div>
      </Fade>

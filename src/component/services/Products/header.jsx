@@ -1,8 +1,27 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import {Link} from 'react-router-dom'
+import {useSelector} from 'react-redux'
+import {getCategory} from '../../../redux/action'
 import s from '../styles/header.module.css'
 
 export default function Header() {
+  
+  const Category = useSelector(state => state.AllCategories)
+  
+  const[data, setData] = useState([])
+
+ useEffect(()=>{
+  
+  fetch('https://api.escuelajs.co/api/v1/products')
+  .then(response => response.json())
+  .then(r => setData(r.map(res =>(
+    <h1>{res.title}</h1>
+  ))))
+
+ }, [])
+
+  console.log('esto es cate',data)
+
   return (
     <div className={s.container}>
       <div >

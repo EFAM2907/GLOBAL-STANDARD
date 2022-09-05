@@ -1,8 +1,9 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import s from '../styles/cardproducts.module.css'
 
 
-export default function CardProducts({images, title,price,category}) {
+export default function CardProducts({images, title,price,category,id}) {
   return (
     <div>
      <div className={s.container}>
@@ -15,9 +16,11 @@ export default function CardProducts({images, title,price,category}) {
              <p>$ {price}</p>
               </div>
                <div className={s.button}>
-                <button className={s.buttonCart}>add a cart</button>
+                <button className={s.buttonCart}>add a cart</button>  
+                 <Link to={`/detailStore/${id}`}>
                  <button className={s.see}>see more</button>
-                  </div>
+                  </Link>             
+                   </div>
                </div>
         </div>
     </div>
