@@ -1,33 +1,39 @@
 {
     "data":[
      {
-        "name": "WATCHES",
-        "img": "https://e7.pngegg.com/pngimages/580/179/png-clipart-tudor-watches-diving-watch-jewellery-baselworld-watch-watch-accessory-bracelet.png",
+        "id":1,
+        "name": "PRODUCTS",
+        "img": "https://img.lalr.co/cms/2022/08/08062815/ECCO-Biom.jpg",
         "price": "24.99 $"
 
 
      },
      {
+       "id":2,
         "name": "BUSINESS",
         "img": "https://www.adobe.com/es/express/create/media_1579406bcc4d2ed2df42e675a090e1ea05ffa8acf.png?width=750&format=png&optimize=medium",
         "price": "50.99 $"
      },
      {
+        "id":3,
         "name": "TECHNOLOGIES",
         "img": "https://kameleon.es/wp-content/uploads/2021/02/nuevas-tecnologias-interpretacion-traducccion960x522.jpg",
         "price": "94.99 $"
      },
      {
+       "id":4,
         "name": "COSMETIC",
         "img": "https://i.pinimg.com/236x/17/43/56/174356ce0ec95655ab74ec7e2d3828b2--cosmetic-shop-cosmetic-display.jpg",
         "price": "44.99 $"
      },
      {
+        "id":5,
         "name": "COMMUNICATE",
         "img": "https://www.cinemarket.com.co/wp-content/uploads/2018/04/Canon-5D-Mk4-D.jpg",
         "price": "24.99 $"
      },
      {
+        "id":7,
         "name": "PLANNING",
         "img": "https://i0.wp.com/fpalatam.com/wp-content/uploads/2021/06/planificacion-financiera.jpeg?fit=1200%2C630&ssl=1",
         "price": "64.99 $"
