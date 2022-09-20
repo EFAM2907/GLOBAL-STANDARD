@@ -55,3 +55,16 @@
     color:rgb(0, 0, 0)
 
 }
+
+.detalle{
+    display:flex;
+    justify-content:center;
+    position: fixed;
+    top:200px;
+    left:200px;
+    align-items:center;
+    padding:30px
+
+ 
+    
+}

@@ -11,3 +11,7 @@
 .container{
     margin-left: 100px;
 }
+
+.select{
+    border: none
+}

@@ -2,10 +2,13 @@ import React, {useEffect,useState} from 'react'
 import {useSelector} from 'react-redux'
 import {Link} from 'react-router-dom'
 import Fade from 'react-reveal/Fade';
+import { useDispatch } from 'react-redux'
+import {getCategory} from '../../../redux/action'
 import CardProducts from './cardProducts'
 import Paginado from './paginado'
 import Header from './header'
 import SearchBar from './search'
+import imagen from '../../../img/Principal.png'
 import s from '../styles/store.module.css'
 
 
@@ -20,11 +23,16 @@ export default function StoreProducts() {
 
   const maximo = productos.length / paisesPorPagina
 
+  const dispatch = useDispatch()
+
+  useEffect(()=>{
+    dispatch(getCategory())
+  },[])
 
   return (
     <div>
       <Fade right >
-      <Header />
+      <Header setPagina = {setPagina} />
    <br />
 
     
@@ -47,10 +55,9 @@ export default function StoreProducts() {
               <div>
              <div>
                 <CardProducts 
-                images={p.images ? p.images:'https://d1fufvy4xao6k9.cloudfront.net/images/landings/421/wedding-shoe.jpg'}
+                images={p.images}
                 title={p.title} 
                 price={p.price}
-                category={p.category.name} 
                 id={p.id} />
                 
              </div>
