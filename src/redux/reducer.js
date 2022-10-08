@@ -40,9 +40,7 @@ const rootReducer = (state = initialState, action)=>{
      }
       
      case SEARCH_CATEGORY:{
-        // console.log('estas es la action.payload', action.payload)
         const cate = state.products
-                console.log('esto es cate', cate)
 
         const filtro = action.payload == ""? cate : cate.filter(e => 
             {

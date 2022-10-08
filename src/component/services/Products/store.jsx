@@ -19,7 +19,7 @@ export default function StoreProducts() {
   const [pagina, setPagina] = useState(1)
   const [paisesPorPagina, setpaisesPorPagina] = useState(12)
 
-  console.log('todos los productos',productos)
+  // console.log('todos los productos',productos)
 
   const maximo = productos.length / paisesPorPagina
 
