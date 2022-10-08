@@ -18,28 +18,32 @@ const categories = (e) =>{
 } 
 
   return (
+    <div>
     <div className={s.container}>
       <div >
         <img src='https://www.homeelementsweb.com/wp-content/uploads/2020/12/logo-homeelements-4.png' alt='...' width='60'  />
         </div>
          <div className={s.h3}>
           <div >
+            <div >
            <Link to={'/'}  >
-            <h3 className={s.inicio}>INICIO</h3></Link> 
+            <h3 >HOME</h3></Link> 
              </div>
               <div>
+              <h2>CATEGORIES</h2>
+              </div>
                <select className={s.select} onChange ={(e)=> categories(e)}>
                 <option value ="">Category</option>
                  {Category && Category.map((e, i) => (
                   <option key={i} value={e}>{e}</option>
                   ))}
                 </select>
-                 <h2>CATEGORIAS</h2>
+                
                   </div>
                    </div>
                     <div>
                      <img src='https://cdn-icons-png.flaticon.com/512/107/107831.png' alt='...' width='20'  />
                       </div>  
-                       </div>
+                       </div></div>
   )
 }

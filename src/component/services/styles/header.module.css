@@ -22,3 +22,14 @@
   font-size:13px
 
 }
+
+.select{
+  border: none;
+  text-align: center;
+  cursor: pointer
+}
+
+.varios{
+  display:flex;
+  justify-content:space-around;
+}
